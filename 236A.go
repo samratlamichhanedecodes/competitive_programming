@@ -4,9 +4,9 @@ import (
 	"fmt"
 )
 
-func isCharacterInTheString(stringToFind string, character rune) bool {
+func isCharacterInTheString(stringToFindCharIn string, character rune) bool {
 
-	for _, char := range stringToFind{
+	for _, char := range stringToFindCharIn{
 		if(character == char){
 			return true
 		}
