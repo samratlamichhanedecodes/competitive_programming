@@ -18,7 +18,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func main96A() {
 	var input string
 	fmt.Scan(&input)
 
