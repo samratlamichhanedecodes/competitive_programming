@@ -5,30 +5,30 @@ import (
 	"strings"
 )
 
-func main(){
+func main339a() {
 	var summationStr string
 	fmt.Scan(&summationStr)
 	numbersToArrange := strings.Split(summationStr, "+")
 
 	var ones, twos, threes string
-	for _, number := range numbersToArrange{
+	for _, number := range numbersToArrange {
 		switch number {
 		case "1":
 			if len(ones) == 0 {
 				ones = number
-			}else{
+			} else {
 				ones = ones + "+1"
 			}
 		case "2":
 			if len(twos) == 0 {
 				twos = number
-			}else{
+			} else {
 				twos = twos + "+2"
 			}
 		case "3":
 			if len(threes) == 0 {
 				threes = number
-			}else{
+			} else {
 				threes = threes + "+3"
 			}
 		}
@@ -38,30 +38,30 @@ func main(){
 
 	if len(ones) == 0 {
 		if len(twos) == 0 {
-			if(len(threes) == 0){
+			if len(threes) == 0 {
 				newString = ""
-			}else{
+			} else {
 				newString = threes
 			}
-		}else{
-			if(len(threes) == 0){
-				newString = twos 
-			}else{
+		} else {
+			if len(threes) == 0 {
+				newString = twos
+			} else {
 				newString = twos + "+" + threes
 			}
 		}
 
-	}else{
+	} else {
 		if len(twos) == 0 {
-			if(len(threes) == 0){
+			if len(threes) == 0 {
 				newString = ones
-			}else{
+			} else {
 				newString = ones + "+" + threes
 			}
-		}else{
-			if(len(threes) == 0){
-				newString = ones + "+" + twos 
-			}else{
+		} else {
+			if len(threes) == 0 {
+				newString = ones + "+" + twos
+			} else {
 				newString = ones + "+" + twos + "+" + threes
 			}
 		}

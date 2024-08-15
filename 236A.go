@@ -6,8 +6,8 @@ import (
 
 func isCharacterInTheString(stringToFindCharIn string, character rune) bool {
 
-	for _, char := range stringToFindCharIn{
-		if(character == char){
+	for _, char := range stringToFindCharIn {
+		if character == char {
 			return true
 		}
 	}
@@ -15,12 +15,12 @@ func isCharacterInTheString(stringToFindCharIn string, character rune) bool {
 
 }
 
-func main(){
+func main236a() {
 	var userName string
 	fmt.Scan(&userName)
 
 	var userNameWithUniqueChars string
-	for _, char := range userName{
+	for _, char := range userName {
 		if !isCharacterInTheString(userNameWithUniqueChars, char) {
 			userNameWithUniqueChars = userNameWithUniqueChars + string(char)
 		}
@@ -28,7 +28,7 @@ func main(){
 
 	if (len(userNameWithUniqueChars) & 1) == 1 {
 		fmt.Println("IGNORE HIM!")
-	}else{
+	} else {
 		fmt.Println("CHAT WITH HER!")
 	}
 }

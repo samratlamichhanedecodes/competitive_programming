@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main(){
+func main266a() {
 	var numberOfStones int
 	var stones string
 
@@ -15,10 +15,10 @@ func main(){
 	var removeCount int
 	for index < numberOfStones-1 {
 		if stones[index] == stones[index+1] {
-			removeCount ++
-			index ++
-		}else{
-			index ++
+			removeCount++
+			index++
+		} else {
+			index++
 		}
 	}
 	fmt.Println(removeCount)

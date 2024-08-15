@@ -5,11 +5,11 @@ import (
 	"strings"
 )
 
-func main(){
+func main281a() {
 	var word string
 	fmt.Scan(&word)
 
-	if(len(word) > 0){
+	if len(word) > 0 {
 		capitalizedWord := strings.ToUpper(string(word[0])) + word[1:]
 		fmt.Println(capitalizedWord)
 	}

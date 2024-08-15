@@ -5,13 +5,12 @@ import (
 	"strings"
 )
 
-func main(){
+func main118a() {
 	var input string
 
 	fmt.Scan(&input)
 
 	input = strings.ToLower(input)
-
 
 	var newString string
 	for _, char := range input {

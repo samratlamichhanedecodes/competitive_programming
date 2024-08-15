@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main(){
+func main546a() {
 	var k, w int
 	var n int64
 
@@ -14,7 +14,7 @@ func main(){
 
 	if int64(moneyForBanana) > n {
 		fmt.Println(int64(moneyForBanana) - n)
-	}else{
+	} else {
 		fmt.Println(0)
 	}
 
